@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <img src="Home_V3c_R1.png" alt="" id="logo">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <img src="bars-solid.svg" alt=" " width="20px" class="bars" onclick="togglebar()"></label>
+            <ul class="nav-ul tap2" id="tap">
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Product</a>
+                </li>
+                <li>
+                    <a href="#">Integrations</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li class="special">
+                    <a href="#"><button>Get a Quote</button></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- quaryselector -->
+
+    <!-- <script>
+        let toggleStatus = 1;
+
+        function togglebar() {
+            if (toggleStatus == 1) {
+                let sideBar = document.querySelector(".nav-ul")
+                sideBar.style.cssText = "left:0px;"
+                toggleStatus = 0;
+            } else if (toggleStatus == 0) {
+                let sideBar = document.querySelector(".nav-ul")
+                sideBar.style.cssText = "left:-100%;"
+                toggleStatus = 1;
+            }
+        }
+    </script> -->
+
+
+    <!-- idselector -->
+    <!-- <script>
+        let toggleStatus = 1;
+
+        function togglebar() {
+            if (toggleStatus == 1) {
+                let sideBar = document.getElementById("tap")
+                sideBar.style.cssText = "left:0px;"
+                toggleStatus = 0;
+            } else if (toggleStatus == 0) {
+                let sideBar = document.getElementById("tap")
+                sideBar.style.cssText = "left:-100%;"
+                toggleStatus = 1;
+            }
+        }
+    </script> -->
+
+
+    <!-- class selector -->
+    <script>
+        let toggleStatus = 1;
+
+        function togglebar() {
+            if (toggleStatus == 1) {
+                var sideBar = document.getElementsByClassName("tap2");
+                sideBar[0].style.cssText = "left:0px;"
+                toggleStatus = 0;
+            } else if (toggleStatus == 0) {
+                let sideBar = document.getElementsByClassName("tap2");
+                sideBar[0].style.cssText = "left:-100%;";
+                toggleStatus = 1;
+            }
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>
